@@ -173,7 +173,7 @@ class PageTurnState extends State<PageTurn> with TickerProviderStateMixin {
     return Material(
       child: LayoutBuilder(
         builder: (context, dimens) => GestureDetector(
-          behavior: HitTestBehavior.opaque,
+          behavior: HitTestBehavior.translucent,
           onHorizontalDragCancel: () => _isForward = null,
           onHorizontalDragUpdate: (details) => _turnPage(details, dimens),
           onHorizontalDragEnd: (details) => _onDragFinish(),
